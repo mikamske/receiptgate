@@ -47,9 +47,9 @@ were accidentally round-tripped through the restricted Bash parser.
 The current branch keeps direct argv separate from shell text, uses shared executable/rule
 checks, writes portable Git-Bash hook paths and quotes POSIX table paths. The argv fix at
 `2483e62b22b2912287db927c8d3576d1dbe124fa` then
-[passed all nine matrix jobs](https://github.com/luminosstudioai-creator/receiptgate/actions/runs/37282071299).
+[passed all nine matrix jobs](https://github.com/mikamske/receiptgate/actions/runs/37282071299).
 The Git-pathspec selection guard at `256f78127500106b7fa57ce2926eb3c4359dee01`
-[passed all nine matrix jobs](https://github.com/luminosstudioai-creator/receiptgate/actions/runs/37283252267), including
+[passed all nine matrix jobs](https://github.com/mikamske/receiptgate/actions/runs/37283252267), including
 40 test methods, lint, strict typing, coverage and package builds. The installed wheel was
 separately checked outside the source tree: direct execution, wildcard staging denial and
 ledger verification passed in a synthetic repository.
