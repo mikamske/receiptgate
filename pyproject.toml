@@ -15,8 +15,8 @@ classifiers = ["Development Status :: 3 - Alpha", "Programming Language :: Pytho
 dependencies = []
 
 [project.urls]
-Repository = "https://github.com/luminosstudioai-creator/receiptgate"
-Issues = "https://github.com/luminosstudioai-creator/receiptgate/issues"
+Repository = "https://github.com/mikamske/receiptgate"
+Issues = "https://github.com/mikamske/receiptgate/issues"
 
 [project.scripts]
 receiptgate = "receiptgate.cli:main"
