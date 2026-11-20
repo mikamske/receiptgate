@@ -1,6 +1,6 @@
 # receiptgate
 
-[![Checks](https://github.com/luminosstudioai-creator/receiptgate/actions/workflows/ci.yml/badge.svg)](https://github.com/luminosstudioai-creator/receiptgate/actions/workflows/ci.yml)
+[![Checks](https://github.com/mikamske/receiptgate/actions/workflows/ci.yml/badge.svg)](https://github.com/mikamske/receiptgate/actions/workflows/ci.yml)
 
 **Your agent says the tests passed. Keep evidence for the code it actually tested.**
 
@@ -128,9 +128,17 @@ python3 -m venv .venv
 
 The CI matrix covers Python 3.11–3.13 across Linux, macOS and Windows. Its first run at
 `124eb7d` passed six Linux/macOS jobs and failed all three Windows jobs. The argv fix at
-`2483e62` subsequently [passed all nine jobs](https://github.com/luminosstudioai-creator/receiptgate/actions/runs/37282071299).
-The Git-pathspec guard at `256f781` also [passed all nine jobs](https://github.com/luminosstudioai-creator/receiptgate/actions/runs/37283252267). The measured 1,000-process hook benchmark failed the p95 <50ms target
+`2483e62` subsequently [passed all nine jobs](https://github.com/mikamske/receiptgate/actions/runs/37282071299).
+The Git-pathspec guard at `256f781` also [passed all nine jobs](https://github.com/mikamske/receiptgate/actions/runs/37283252267). The measured 1,000-process hook benchmark failed the p95 <50ms target
 (p95 130.3ms on that earlier commit). Details and raw benchmark data are recorded in
 [docs/acceptance.md](docs/acceptance.md).
+
+## Related projects
+
+- [tidyguard](https://github.com/mikamske/tidyguard): keeps coding agents from leaving notes, rewritten specs and leftovers behind
+- [ki-inventur](https://github.com/mikamske/ki-inventur): finds AI services in your code and keeps the GDPR register in sync (German)
+- [json-response-gate](https://github.com/mikamske/json-response-gate): strict offline JSON contracts for model responses
+- [local-model-eval](https://github.com/mikamske/local-model-eval): replays recorded LLM answers against explicit rubrics
+- [ai-context-redactor](https://github.com/mikamske/ai-context-redactor): removes selected sensitive patterns before text reaches a model
 
 Apache-2.0 · Copyright 2026 Mika Mischke
